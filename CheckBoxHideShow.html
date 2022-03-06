@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chacked Box  Value Hide Show by Js</title>
+
+<style type="text/css">
+.Card{
+
+height: 300px;
+width: 400px;
+background-color: green;
+margin: 50px auto;
+
+ }	
+
+
+
+.H3{
+display: none;
+text-align:center;
+margin-left: 30px;
+position: fixed;
+
+ }
+
+#Checked{
+margin: 100px auto;
+margin-left: 200px;
+
+
+ }
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="Card">
+<h3 class="H3">Text Display By Js Programming</h3>
+
+
+
+<input type="checkbox" name="" id="Checked">Checked
+
+
+</div>
+
+
+
+
+<script type="text/javascript">
+
+ var CheckBox = document.querySelector("#Checked");
+ 
+CheckBox.addEventListener("click",function(){
+
+ var DisplayText = document.querySelector(".H3");
+    
+
+if(CheckBox.checked==true){
+
+DisplayText.style.display="block";
+
+}else{
+
+DisplayText.style.display="none";
+
+}
+
+
+});
+
+
+</script>
+
+
+</body>
+</html>
